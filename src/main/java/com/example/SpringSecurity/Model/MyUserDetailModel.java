@@ -7,6 +7,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 public class MyUserDetailModel implements UserDetails {
@@ -24,8 +25,9 @@ public class MyUserDetailModel implements UserDetails {
                 .collect(Collectors.toList());
 
     }
-    public MyUserDetailModel(){}
+    public MyUserDetailModel(){
 
+    }
 
 
     @Override
